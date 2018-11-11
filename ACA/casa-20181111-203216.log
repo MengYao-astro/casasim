@@ -1,0 +1,136 @@
+2018-11-11 20:32:19	INFO	::casa	
+2018-11-11 20:32:19	INFO	::casa	CASA Version 5.4.0-68  
+2018-11-11 20:32:34	INFO	default::::	 #######  Setting values to default for task: simobserve  #######
+2018-11-11 20:32:34	INFO	simobserve::::	
+2018-11-11 20:32:34	INFO	simobserve::::+	##########################################
+2018-11-11 20:32:34	INFO	simobserve::::+	##### Begin Task: simobserve         #####
+2018-11-11 20:32:34	INFO	simobserve::::	simobserve(project="no1",skymodel="no1flux.fits",inbright="0.004",indirection="B1950 23h59m59.96s -34d59m59.50s",incell="0.1arcsec",
+2018-11-11 20:32:34	INFO	simobserve::::+	        incenter="330.076GHz",inwidth="50MHz",complist="",compwidth="8GHz",setpointings=True,
+2018-11-11 20:32:34	INFO	simobserve::::+	        ptgfile="$project.ptg.txt",integration="10s",direction="",mapsize="1arcmin",maptype="hex",
+2018-11-11 20:32:34	INFO	simobserve::::+	        pointingspacing="9arcsec",caldirection="",calflux="1Jy",obsmode="int",refdate="2014/05/21",
+2018-11-11 20:32:34	INFO	simobserve::::+	        hourangle="transit",totaltime="3600s",antennalist="ALMA;0.5arcsec",sdantlist="aca.tp.cfg",sdant=0,
+2018-11-11 20:32:34	INFO	simobserve::::+	        outframe="LSRK",thermalnoise="tsys-atm",user_pwv=0.5,t_ground=269.0,t_sky=260.0,
+2018-11-11 20:32:34	INFO	simobserve::::+	        tau0=0.1,seed=11111,leakage=0.0,graphics="both",verbose=False,
+2018-11-11 20:32:34	INFO	simobserve::::+	        overwrite=True)
+2018-11-11 20:32:34	INFO	simobserve::FITSCoordinateUtil::fromFITSHeader	passing empty or nonexistant spectral Coordinate axis
+2018-11-11 20:32:34	INFO	simobserve::ImageFactory::createImage	Created Paged image 'no1/no1.ALMA_0.5arcsec.skymodel' of shape [1345, 1345, 1, 1] with float valued pixels.
+2018-11-11 20:32:36	INFO	simobserve::ImageFactory::fromImage	Created Paged image 'no1/no1.ALMA_0.5arcsec.skymodel.flat' of shape [1345, 1345] with float valued pixels.
+2018-11-11 20:32:36	INFO	simobserve::image::_adddegaxes 	Creating image 'no1/no1.ALMA_0.5arcsec.skymodel.flat' of shape [1345, 1345, 1]
+2018-11-11 20:32:36	INFO	simobserve::simutil::	converted resolution to antennalist /Applications/CASA.app/Contents/data/alma/simmos/alma.out07.cfg
+2018-11-11 20:32:36	INFO	simobserve::readantenna::	Reading antenna positions from '/Applications/CASA.app/Contents/data/alma/simmos/alma.out07.cfg'
+2018-11-11 20:32:36	INFO	simobserve::readantenna::	Antenna locations in UTM; will read from file easting, northing, elevation in m
+2018-11-11 20:32:36	INFO	simobserve::readantenna::	Reading antenna positions from '/Applications/CASA.app/Contents/data/alma/simmos/alma.out07.cfg'
+2018-11-11 20:32:36	INFO	simobserve::readantenna::	Antenna locations in UTM; will read from file easting, northing, elevation in m
+2018-11-11 20:32:36	INFO	simobserve::simobserve::	calculating map pointings centered at B1950 23:59:59.96000 -034.59.59.500000
+2018-11-11 20:32:36	INFO	simobserve::calc_pointings::	using 42 generated pointing(s)
+2018-11-11 20:32:36	INFO	simobserve::simobserve::	center = B1950 23:59:59.96001 -034.59.59.500000
+2018-11-11 20:32:37	INFO	simobserve::ImageRegion::fromRecord	Selected bounding box : 
+2018-11-11 20:32:37	INFO	simobserve::ImageRegion::fromRecord+	    [0, 0, 0] to [1344, 1344, 0]  (00:00:05.434, -35.01.06.742, I to 23:59:54.496, -34.58.52.342, I)
+2018-11-11 20:32:37	INFO	simobserve::ImageRegion::fromRecord	Selected bounding box : 
+2018-11-11 20:32:37	INFO	simobserve::ImageRegion::fromRecord+	    [0, 0, 0] to [1344, 1344, 0]  (00:00:05.434, -35.01.06.742, I to 23:59:54.496, -34.58.52.342, I)
+2018-11-11 20:32:37	INFO	simobserve::simobserve::	preparing empty measurement set
+2018-11-11 20:32:37	INFO	simobserve::simobserve::	You desire an hour angle of 0.0 hours
+2018-11-11 20:32:37	INFO	simobserve::NewMSSimulator::initAnt() 	Using global coordinates for the antennas
+2018-11-11 20:32:37	INFO	simobserve::NewMSSimulator::initAnt() 	Added rows to ANTENNA table
+2018-11-11 20:32:37	INFO	simobserve::MSsimulator::initSpWindows() 	Creating new spectral window band3, ID 1
+2018-11-11 20:32:37	INFO	simobserve::MSsimulator::initFeeds() 	Added rows to FEED table
+2018-11-11 20:32:37	INFO	simobserve::simulator::settimes()	Times 
+2018-11-11 20:32:37	INFO	simobserve::simulator::settimes()+	     Integration time 10s
+2018-11-11 20:32:37	INFO	simobserve::simulator::settimes()	     Times will be interpreted as hour angles for first source
+2018-11-11 20:32:37	INFO	simobserve::NewMSSimulator::observe()	First source: no1.ALMA_0.5arcsec_0 @ 00:02:31.83   -34.42.53.87       J2000
+2018-11-11 20:32:37	INFO	simobserve::NewMSSimulator::observe()+	Full time range: 20-May-2014/12:10:37.0 -- 20-May-2014/13:10:37.0 TAI with int = 10
+2018-11-11 20:32:37	INFO	simobserve::NewMSSimulator::observe()	Calculating a total of 360 integrations
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setdata() 	Selecting data
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setdata() 	Performing selection on MeasurementSet
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setdata() 	Selecting on field and spectral window ids
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setdata() 	No selection string given
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setdata() 	Selection did not drop any rows
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setvp()	Setting voltage pattern parameters
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setvp()	Beam Squint will be included in the VP model
+2018-11-11 20:32:41	INFO	simobserve::Simulator::setvp()	and the parallactic angle increment is 360 degrees
+2018-11-11 20:32:41	INFO	simobserve::simobserve::	done setting up observations (blank visibilities)
+2018-11-11 20:32:41	INFO	simobserve::simobserve::	predicting from no1/no1.ALMA_0.5arcsec.skymodel
+2018-11-11 20:32:41	INFO	simobserve::Simulator::predict() 	Predicting visibilities using model: [no1/no1.ALMA_0.5arcsec.skymodel] and componentList: 
+2018-11-11 20:32:41	INFO	simobserve::Simulator::predict() 	The data column will be replaced
+2018-11-11 20:32:41	INFO	simobserve::Simulator::createSkyEquation() 	Opening model 0 named no1/no1.ALMA_0.5arcsec.skymodel
+2018-11-11 20:32:41	INFO	simobserve::Simulator::getVPRecord 	Using Voltage Patterns from the VPManager
+2018-11-11 20:32:41	INFO	simobserve::Simulator::createSkyEquation() 	Synthesis gridding 
+2018-11-11 20:32:41	INFO	simobserve::Simulator::createSkyEquation() 	Fourier transforms will use image centers as tangent points
+2018-11-11 20:32:41	INFO	simobserve::VPSkyJones::VPSkyJones	PB used ALMA
+2018-11-11 20:32:41	INFO	simobserve::BeamSkyJones::summary	Beam Summary: 
+2018-11-11 20:32:41	INFO	simobserve::BeamSkyJones::summary	Model 1 for ALMA ant=-1 feed=-1 uses PB: AIRY
+2018-11-11 20:32:41	INFO	simobserve::PBMath1D::summary	Using AIRY PB Class 
+2018-11-11 20:32:41	INFO	simobserve::PBMathInterface::summary	These parameters are for Voltage Pattern
+2018-11-11 20:32:41	INFO	simobserve::PBMathInterface::summary	No Beam Squint
+2018-11-11 20:32:41	INFO	simobserve::PBMath1D::summary	Max Radius at 1 GHz: 107.04 arcmin 
+2018-11-11 20:32:41	INFO	simobserve::PBMath1DAiry::summary	   Dish Diameter: 10.7 m 
+2018-11-11 20:32:41	INFO	simobserve::PBMath1DAiry::summary	Blocked Diameter: 0.75 m 
+2018-11-11 20:32:54	INFO	simobserve::Simulator::reset() 	Resetting all visibility corruption components
+2018-11-11 20:32:54	INFO	simobserve::Simulator::reset() 	Reset all image-plane corruption components
+2018-11-11 20:32:54	INFO	simobserve::simobserve::	generation of measurement set no1/no1.ALMA_0.5arcsec.ms complete
+2018-11-11 20:32:55	INFO	simobserve::::	Position: [1761.87, -4307.63, -1977.71]
+2018-11-11 20:32:55	INFO	simobserve::::+	Epoch: 56798::00:00:00.0000
+2018-11-11 20:32:55	INFO	simobserve::::+	Epoch: 56797::12:40:38.9220
+2018-11-11 20:32:55	INFO	simobserve::::+	LAST of rise= 16:55:27.83
+2018-11-11 20:32:55	INFO	simobserve::::	LAST of  set= 07:11:06.05
+2018-11-11 20:32:55	INFO	simobserve::::	UTC of rise= 2014/05/20/05:35:16
+2018-11-11 20:32:55	INFO	simobserve::::+	UTC of  set= 2014/05/20/19:48:34
+2018-11-11 20:32:55	INFO	simobserve::ephemeris::	peak=20-May-2014/12:40:39
+2018-11-11 20:32:55	INFO	simobserve::Imager::open() 	Opening MeasurementSet /Users/meng/work/casasim/ACA/no1/no1.ALMA_0.5arcsec.ms
+2018-11-11 20:32:55	INFO	simobserve::simobserve::	using default model cell {'value': 0.1, 'unit': 'arcsec'} for PSF calculation
+2018-11-11 20:32:55	INFO	simobserve::imager::defineimage()	Defining image properties:nx=128 ny=128 cellx='0.1arcsec' celly='0.1arcsec' stokes=I' mode=MFS nchan=-1 start=0 step=0 spwids=[0] fieldid=0 facets=1 frame=1 distance='0'
+2018-11-11 20:32:55	INFO	simobserve::imager::defineimage()	 phaseCenter='field-0 ' mStart='Radialvelocity: 0' qStep='0 '' mFreqStart='Frequency: 0
+2018-11-11 20:32:55	INFO	simobserve::imager::approximatepsfs() 	Calculating approximate PSFs using full sky equation
+2018-11-11 20:32:56	INFO	simobserve::imager::createFTMachine() 	Performing interferometric gridding...
+2018-11-11 20:32:57	INFO	simobserve::ImageSkyModel::makeApproxPSFs	bmaj: 0.551953", bmin: 0.476663", bpa: 74.9451 deg
+2018-11-11 20:32:57	INFO	simobserve::imager::approximatepsfs() 	Approximate PSF  : size 0.551953 by 0.476663 (arcsec) at pa 74.9451 (deg)
+2018-11-11 20:32:57	INFO	simobserve::imager::approximatepsfs() +	and volume = -11.0782 pixels 
+2018-11-11 20:32:57	INFO	simobserve::imager::fitpsf() 	Fitting to psf
+2018-11-11 20:32:57	INFO	simobserve::imager::fitpsf() 	  Beam fit: 0.551953 by 0.476663 (arcsec) at pa 74.9451 (deg) 
+2018-11-11 20:32:57	INFO	simobserve::CasacRegionManager::fromBCS	No directional region specified. Using full positional plane.
+2018-11-11 20:32:57	INFO	simobserve::CasacRegionManager::fromBCS	Using all spectral channels.
+2018-11-11 20:32:57	INFO	simobserve::CasacRegionManager::fromBCS	Using polarizations ALL
+2018-11-11 20:32:57	INFO	simobserve::ImageRegion::fromRecord	Selected bounding box : 
+2018-11-11 20:32:57	INFO	simobserve::ImageRegion::fromRecord+	    [0, 0, 0, 0] to [127, 127, 0, 0]  (00:02:32.351, -34.43.00.273, I, 3.30076e+11Hz to 00:02:31.321, -34.42.47.573, I, 3.30076e+11Hz)
+2018-11-11 20:32:57	INFO	simobserve::ImageCollapser::_doDegenerateAxesCase	All subimage axes to be collapsed are degenerate, using algorithm optimized for that case.
+2018-11-11 20:32:57	INFO	simobserve::noise::	copying no1/no1.ALMA_0.5arcsec.ms to no1/no1.ALMA_0.5arcsec.noisy.ms and adding thermal noise
+2018-11-11 20:32:57	INFO	simobserve::noise::	interpolated receiver temp=75
+2018-11-11 20:32:57	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	Opening MeasurementSet /Users/meng/work/casasim/ACA/no1/no1.ALMA_0.5arcsec.noisy.ms with 441000 rows
+2018-11-11 20:32:57	INFO	noise::NewMSSimulator::NewMSSimulator(MeasurementSet& theMS) 	   last spectral window ID = 1
+2018-11-11 20:32:57	INFO	noise::Simulator::setdata() 	Selecting data
+2018-11-11 20:32:57	INFO	noise::Simulator::setdata() 	Performing selection on MeasurementSet
+2018-11-11 20:32:57	INFO	noise::Simulator::setdata() 	Selecting on spectral window id
+2018-11-11 20:32:57	INFO	noise::Simulator::setdata() 	No selection string given
+2018-11-11 20:32:57	INFO	noise::Simulator::setdata() 	Selection did not drop any rows
+2018-11-11 20:32:58	INFO	noise::Simulator::create_corrupt() 	Creating A NOISE Calibration structure for data corruption.
+2018-11-11 20:32:58	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 1 solution intervals.
+2018-11-11 20:32:58	INFO	noise::SVC[A Noise]::setSimulate() 	calTable name not set - not writing to disk (note: OTF sim - not creating Calset either)
+2018-11-11 20:32:58	INFO	noise::Simulator::setnoise2() 	adding noise with the sensitivity constant of 1/sqrt(2)
+2018-11-11 20:32:58	INFO	noise::Simulator::setnoise2() 	User has not set ground pressure, using 560mb
+2018-11-11 20:32:58	INFO	noise::Simulator::setnoise2() 	User has not set site altitude, using 5000m
+2018-11-11 20:32:58	INFO	noise::Simulator::setnoise2() 	User has not set water scale height, using 2km
+2018-11-11 20:32:58	INFO	noise::Simulator::create_corrupt() 	Creating TF NOISE Calibration structure for data corruption.
+2018-11-11 20:32:58	INFO	noise::SVC::sizeUpSim() 	For simint = integration, found 360 solution intervals.
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	Initializing ATM
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	altitude=5000m, Pground=560mb, Tground=269K, humidity= 20%, water scale height=2000m
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	Spectral window 330.076(ch 5/10)
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	After setting WH2O to 0.5
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from RefractiveIndexProfile = 0.0174016, 0.139891 at 330.076 GHz (ch0)
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	Dry and Wet Opacity from SkyStatus              = 0.0174016, 0.139891
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	Sky plus ground and CMB Brightness Temp across Spw 0, for spill=0.95 Tground=269 pwv=0.5
+2018-11-11 20:32:58	INFO	noise::AtmCorr::initAtm 	 Zenith Tebb[330.051,330.076,330.096]=[55.4066,55.2462,55.1195]
+2018-11-11 20:32:58	INFO	noise::AtmCorr::init(vi,par,type) 	Zenith Tsys at center of first Spectral Window = 143.601 tground=269 spillover=0.95
+2018-11-11 20:32:58	INFO	noise::AtmCorr::init(vi,par,type) 	 pwv=0.5 tau=0.157292(ch0)
+2018-11-11 20:32:58	INFO	noise::SVC[Tf Jones]::setSimulate() 	Calculating corruption terms for simulated Tf Jones: output table=no1/no1.ALMA_0.5arcsec.noisy.T.cal simint=integration t=0
+2018-11-11 20:33:00	INFO	noise::SVC[Tf Jones]::setSimulate() 	Writing calTable = no1/no1.ALMA_0.5arcsec.noisy.T.cal (Tf Jones)
+2018-11-11 20:33:00	INFO	noise::::	Writing solutions to table: no1/no1.ALMA_0.5arcsec.noisy.T.cal
+2018-11-11 20:33:00	INFO	noise::Simulator::corrupt() 	Doing visibility corruption.
+2018-11-11 20:33:00	INFO	noise::Simulator::corrupt() 	simulated A Noise: output table=<none> simint=integration t=0spwok = [1] in correct mode.
+2018-11-11 20:33:00	INFO	noise::Simulator::corrupt() 	simulated Tf Jones: output table=no1/no1.ALMA_0.5arcsec.noisy.T.cal simint=integration t=0spwok = [1] in corrupt mode.
+2018-11-11 20:33:00	WARN	noise::CTPatchedInterp::interpolate	In caltable no1.ALMA_0.5arcsec.noisy.T.cal_sim_temp (Tf Jones):
+2018-11-11 20:33:00	WARN	noise::CTPatchedInterp::interpolate+	 Insufficient solution channel sampling (nchan=1) for frequency-dependent LINEAR interpolation 
+2018-11-11 20:33:00	WARN	noise::CTPatchedInterp::interpolate+	 of calibration for MS spw=0; using NEAREST instead.
+2018-11-11 20:33:01	INFO	noise::Simulator::reset() 	Resetting all visibility corruption components
+2018-11-11 20:33:01	INFO	noise::Simulator::reset() 	Reset all image-plane corruption components
+2018-11-11 20:33:01	INFO	simobserve::::	##### End Task: simobserve           #####
+2018-11-11 20:33:01	INFO	simobserve::::+	##########################################
